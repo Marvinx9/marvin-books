@@ -88,3 +88,14 @@
   font-weight: bold;
   text-decoration: none;
 }
+
+@media screen and (min-width: 1024px) {
+  .descricao__texto {
+    font-size: 16px;
+  }
+
+  .card {
+    width: 80%;
+    margin: 0 5em;
+  }
+}
