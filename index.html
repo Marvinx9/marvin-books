@@ -3,9 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Marvin Books</title>
   </head>
+
   <body>
     <header class="cabecalho">
       <div class="container">
@@ -14,7 +29,6 @@
           <span class="cabecalho__menu-hamburguer container__imagem"></span>
         </label>
         <ul class="lista-menu">
-          <li class="lista-menu__titulo">Categorias</li>
           <li class="lista-menu__item">
             <a href="#" class="lista-menu__link">Programação</a>
           </li>
@@ -39,12 +53,247 @@
           alt="logo do MarvinBooks"
           class="container__imagem"
         />
+        <h1 class="container__titulo">
+          <b class="container__titulo-negrito">Marvin</b>Books
+        </h1>
+      </div>
+      <div class="opcoes">
+        <li class="opcoes__item">Categorias</li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Favoritos</a>
+        </li>
+        <li class="opcoes__item">
+          <a href="#" class="opcoes__link">Minha estante</a>
+        </li>
       </div>
       <div class="container">
-        <a href="#"><img src="img/frame.svg" class="container__imagem" /></a>
+        <a href="#"
+          ><img
+            src="img/frame.svg"
+            class="container__imagem container__imagem-transparente"
+        /></a>
         <a href="#"><img src="img/sacola.svg" class="container__imagem" /></a>
         <a href="#"><img src="img/vector.svg" class="container__imagem" /></a>
       </div>
     </header>
+
+    <section class="banner">
+      <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+      <p class="banner__texto">
+        Encontre em nossa estante o que precisa para seu desenvolvimento!
+      </p>
+      <input
+        type="search"
+        class="banner__pesquisa"
+        placeholder="Qual será sua próxima leitura?"
+      />
+    </section>
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/capa-node.svg" alt="capa de livro sobre node" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-logica-de-programacao.svg"
+              alt="capa de livro sobre lógica de programação"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-guia-front-end.svg"
+              alt="capa de livro sobre front-end"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/capa-react.svg" alt="capa de livro sobre react" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-arquitetura-software.svg"
+              alt="capa de livro sobre arquitetura de software"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-javascript-assertivo.svg"
+              alt="capa de livro sobre javascript assertivo"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-tinning-sql.svg"
+              alt="capa de livro sobre tinning sql"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <h3 class="descricao__titulo">Sobre o livro:</h3>
+            <h2 class="descricao__titulo-livro">Liderança em Design</h2>
+            <p class="descricao__texto">
+              Habilidades de gestão para alavancar sua carreira
+            </p>
+            <p class="descricao__texto">Por: Vitor Zanini</p>
+            <br />
+            <p class="descricao__texto">A partir de:<span>R$29,90</span></p>
+          </div>
+        </div>
+
+        <div class="card__botao">
+          <ul class="botao">
+            <li class="botao__item">
+              <img src="img/frame.svg" alt="favoritar livro" />
+            </li>
+            <li class="botao__item">
+              <img
+                src="img/sacola.svg"
+                alt="adicionar no carrinho de compras"
+              />
+            </li>
+          </ul>
+          <a href="#" class="botao__ancora">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="carrossel">
+      <br />
+      <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+      <br />
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/capa-node.svg" alt="capa de livro sobre node" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-logica-de-programacao.svg"
+              alt="capa de livro sobre lógica de programação"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/capa-guia-front-end.svg"
+              alt="capa de livro sobre front-end"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <div class="card__descricao">
+          <div class="descricao">
+            <span class="avaliacao"></span>
+            <h3 class="descricao__titulo">Autor do Mês:</h3>
+            <h2 class="descricao__titulo-livro">Robert C. Martin</h2>
+            <p class="descricao__texto">
+              Você será um programador mais eficiente se praticar o conteúdo do
+              livro com afinco.
+            </p>
+          </div>
+          <div class="descricao__autor">
+            <img
+              class="descricao__imagem"
+              src="img/autor-do-mes.svg"
+              alt="imagem de escritor Robert C. Martin"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="card__botao">
+          <ul class="botao">
+            <li class="botao__item">
+              <img src="img/frame.svg" alt="favoritar livro" />
+            </li>
+            <li class="botao__item">
+              <img
+                src="img/sacola.svg"
+                alt="adicionar no carrinho de compras"
+              />
+            </li>
+          </ul>
+          <a href="#" class="botao__ancora">Saiba mais</a>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <section class="topicos">
+      <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+      <ul class="topicos__lista">
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Android</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Marketing Digital</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Agile</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Startups</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">HTML & CSS</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Python</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">OO</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Java</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contato">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+      <input
+        type="email"
+        placeholder="Cadastre seu e-mail"
+        class="contato__email"
+      />
+    </section>
+
+    <hr />
+
+    <footer class="rodape">
+      <h2 class="rodape__titulo">Grupo Marvin</h2>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+      });
+    </script>
   </body>
 </html>
