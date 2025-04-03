@@ -59,7 +59,7 @@
       </div>
 
       <ul class="opcoes">
-        <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+        <input type="checkbox" id="opcoes-menu" class="opcoes__botao" />
         <label for="opcoes-menu">
           <li class="opcoes__item">Categorias</li>
         </label>
@@ -114,11 +114,16 @@
         placeholder="Qual será sua próxima leitura?"
       />
     </section>
-    
+
     <section class="carrossel">
       <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
       <div class="swiper__container">
-        <div class="swiper-button-prev"><img src="img/seta-esquerda.svg" alt="imagem de seta para a esquerda"></div>
+        <div class="swiper-button-prev">
+          <img
+            src="img/seta-esquerda.svg"
+            alt="imagem de seta para a esquerda"
+          />
+        </div>
         <div class="swiper">
           <div class="swiper-pagination"></div>
           <div class="swiper-wrapper">
@@ -158,9 +163,11 @@
                 alt="capa de livro sobre tinning sql"
               />
             </div>
-            </div>
           </div>
-          <div class="swiper-button-next"><img src="img/seta-direita.svg" alt="imagem de seta para a direita"></div>
+        </div>
+        <div class="swiper-button-next">
+          <img src="img/seta-direita.svg" alt="imagem de seta para a direita" />
+        </div>
       </div>
 
       <div class="card">
@@ -198,29 +205,37 @@
       <br />
       <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
       <br />
-      <div class="swiper">
-        <div class="swiper-pagination"></div>
+      <div class="swiper__container">
+        <div class="swiper-button-prev swiper__before">
+          <img
+            src="img/seta-esquerda.svg"
+            alt="imagem de seta para a esquerda"
+          />
+        </div>
+        <div class="swiper">
+          <div class="swiper-pagination"></div>
 
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/capa-node.svg" alt="capa de livro sobre node" />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="img/capa-logica-de-programacao.svg"
-              alt="capa de livro sobre lógica de programação"
-            />
-          </div>
-          <div class="swiper-slide">
-            <img
-              src="img/capa-guia-front-end.svg"
-              alt="capa de livro sobre front-end"
-            />
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/capa-node.svg" alt="capa de livro sobre node" />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/capa-logica-de-programacao.svg"
+                alt="capa de livro sobre lógica de programação"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="img/capa-guia-front-end.svg"
+                alt="capa de livro sobre front-end"
+              />
+            </div>
           </div>
         </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-next swiper__before">
+          <img src="img/seta-direita.svg" alt="imagem de seta para a direita" />
+        </div>
       </div>
 
       <div class="card">
@@ -320,8 +335,8 @@
           type: "bullets",
         },
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
