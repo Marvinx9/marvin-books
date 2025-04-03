@@ -48,6 +48,7 @@
   .contato__descricao {
     margin-right: 5em;
     width: 30%;
+    margin: 2em;
   }
   .contato__email {
     width: 30%;

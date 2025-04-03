@@ -75,3 +75,31 @@
     align-items: center;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .carrossel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper-wrapper {
+    width: 50vw;
+    height: 35vh;
+  }
+
+  .swiper__container {
+    margin: 0 -10vw;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-button-next {
+    display: none;
+  }
+}
